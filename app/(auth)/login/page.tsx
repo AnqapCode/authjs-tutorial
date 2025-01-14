@@ -1,7 +1,7 @@
 import FormLogin from "@/components/auth/form-login";
 import { GithubButton, GoogleButton } from "@/components/auth/social-button";
 
-const Login = ({ searchParams }: { searchParams?: { error?: string } }) => {
+const Login = ({ searchParams }: { searchParams?: { error?: string | unknown } }) => {
   const params = searchParams?.error;
 
   return (
