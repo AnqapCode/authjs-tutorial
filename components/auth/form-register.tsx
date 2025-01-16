@@ -1,14 +1,14 @@
 "use client";
 
-// import { useFormState } from "react-dom";
+import { useFormState } from "react-dom";
 import Link from "next/link";
-import { useActionState } from "react";
+// import { useActionState } from "react";
 import { signUpCredentials } from "@/lib/actions";
 import { RegisterButton } from "@/components/button";
 
 const FormRegister = () => {
-  // const [state, formAction] = useFormState(signUpCredentials, null);
-  const [state, formAction] = useActionState(signUpCredentials, null);
+  const [state, formAction] = useFormState(signUpCredentials, null);
+  // const [state, formAction] = useActionState(signUpCredentials, null);
   console.info(state);
   return (
     // <form onSubmit={handleSubmit} className="space-y-6">
